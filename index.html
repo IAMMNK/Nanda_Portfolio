@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nanda Kumar Marati - Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      transition: background 0.3s, color 0.3s;
+      color: #f5f5f5;
+      padding: 2rem;
+    }
+    body.light {
+      background: #f1f1f1;
+      color: #222;
+    }
+    .light .container {
+      background: rgba(255, 255, 255, 0.8);
+    }
+    h1, h2 {
+      color: #00e5ff;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #00ffc6;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    section {
+      margin-bottom: 2rem;
+      animation: fadeIn 1s ease forwards;
+    }
+    .skills span {
+      background: #00e5ff30;
+      padding: 0.4rem 0.7rem;
+      margin: 0.3rem;
+      display: inline-block;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+    .skills span:hover {
+      transform: scale(1.1);
+    }
+    .project {
+      background: #ffffff10;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .cert-list, .lang-list, .tool-list, .contact-list {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .cert-list li::before, .lang-list li::before, .tool-list li::before, .contact-list li::before {
+      content: '▹';
+      color: #00ffc6;
+      padding-right: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00e5ff;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00e5ff;
+      transition: 0.3s;
+    }
+    .toggle-btn:hover {
+      background: #00ffc6;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+  <div class="container">
+    
+    <header style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+      <img src="22102A040157.jpg" alt="Nanda Kumar Marati" style="width: 120px; height: 120px; border-radius: 30%; object-fit: cover; box-shadow: 0 0 10px #00e5ff;">
+    
+      <h1>Nanda Kumar Marati</h1>
+      <p>Computer Science Student | Developer | Problem Solver</p>
+      <p>
+        📧 <a href="mailto:mnk111204@gmail.com">mnk111204@gmail.com</a><br />
+        📞 +91 6281454205
+      </p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a motivated Computer Science student skilled in data structures, algorithms, and full-stack development. Passionate about using technology to solve real-world problems, I thrive in collaborative environments and am always eager to learn.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3><a href="https://github.com/IAMMNK/Online-Music-Streaming-Platform">Online Music Streaming Platform</a></h3>
+        <p>React + Django based platform with playlists, social sharing, and search functionality.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/IAMMNK/Freelancing-Platform">Freelancing Platform</a></h3>
+        <p>End-to-end freelancing site with user auth, job posting, bidding and AI-driven recommendations.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/IAMMNK/Tic-Tac-Toe">Tic-Tac-Toe Game</a></h3>
+        <p>Classic two-player game with real-time interactions and reset logic built using HTML, CSS, JS.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>C</span><span>Java</span><span>Python</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>SQL</span><span>JDBC</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Developer Tools</h2>
+      <ul class="tool-list">
+        <li>VS Code</li>
+        <li>IntelliJ IDEA</li>
+        <li>Eclipse</li>
+        <li>Anaconda</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><a href="https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs57/Course/NPTEL25CS57S115890031304428589.pdf">NPTEL - Java (80%)</a></li>
+        <li><a href="https://www.hackerrank.com/certificates/38a4f7d36028">CSS - HackerRank Basic</a></li>
+        <li><a href="https://drive.google.com/file/d/16nDLo87fWrEajFZE4gMi4-7x3UGaXDFw/view?usp=drive_link">Cisco Python Essentials 1</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul class="cert-list">
+        <li>Top 30 Rank in Global Olympiad Test (South India)</li>
+        <li>Solved 150+ LeetCode problems (<a href="https://leetcode.com/u/nandamnk/">View Profile</a>)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.Tech - Computer Science</strong>, Mohan Babu University, Tirupati</p>
+      <p>CGPA: 8.47 | Expected Graduation: 2026</p>
+    </section>
+
+    <section>
+      <h2>Languages Known</h2>
+      <ul class="lang-list">
+        <li>Telugu</li>
+        <li>English</li>
+        <li>Hindi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact & Socials</h2>
+      <ul class="contact-list">
+        <li><a href="https://leetcode.com/u/nandamnk/">LeetCode</a></li>
+        <li><a href="https://github.com/IAMMNK">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/marati-nanda-kumar-b36056240/">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Nanda Kumar Marati</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
